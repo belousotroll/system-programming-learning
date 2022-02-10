@@ -32,7 +32,7 @@ int main()
     scanf("%s", string);
 
     int str_length = strlen(string);
-    int msgid = msgget(IPC_PRIVATE, IPC_PRIVATE | 0666);
+    int msgid = msgget(200, IPC_PRIVATE | 0666);
 
     printf("status: start of program; data :: msgid: %d\n", msgid);
 
